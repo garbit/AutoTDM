@@ -3,13 +3,15 @@ AutoTDM will automatically start Target Display Mode when connecting a Thunderbo
 
 The script polls your network interfaces and checks for when an established Thunderbolt bridge connection is assigned an IP. It then fires off the CMD+F2 keyboard command to your host machine (iMac) to start the Target Display Mode.
 
-# Setup
+## Setup
 Place thunderbolt_TDM.py and thunderbolt_TDM.sh in your home directory
 
-# Running via command line:
+## Running via command line
+```python
 python ~/thunderbolt_TDM.py
+```
 
-# Running on Startup
+## Running on Startup
 If you want to have the script execute on iMac startup, add the shell file to your start up list:
 - Apple Icon (top left) > System Preferences > Users and Groups > Login Items (right hand side)
 - Click the + button and select the thunderbolt_TDM.sh file located in your home directory (/Users/yourUserAccount)
